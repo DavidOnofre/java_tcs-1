@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "82aa7e81-1ada-4c20-a931-5fca6eead023",
+		"name": "test tcs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/accounts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"account\": {\n        \"accountNumber\": \"4771236547\",\n        \"accountType\": \"AHO\",\n        \"client\": \"1719382986\"\n    },\n    \"lstMovements\": [\n        {\n            \"amount\": \"100\",\n            \"detail\": \"deposito\"\n        },\n        {\n            \"amount\": \"25\",\n            \"detail\": \"retiro\"\n        },\n        {\n            \"amount\": \"50\",\n            \"detail\": \"deposito\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
